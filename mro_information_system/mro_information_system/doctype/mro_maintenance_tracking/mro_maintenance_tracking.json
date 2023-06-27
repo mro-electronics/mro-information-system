@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-27 09:55:12.049313",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "done_on",
+  "status",
+  "column_break_js7gd",
+  "it_asset",
+  "dow"
+ ],
+ "fields": [
+  {
+   "default": "now",
+   "fieldname": "done_on",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Done on",
+   "reqd": 1
+  },
+  {
+   "default": "Done",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Done\nRequires Follow-up\nIn Progress"
+  },
+  {
+   "fieldname": "it_asset",
+   "fieldtype": "Link",
+   "label": "IT Asset",
+   "options": "MRO IT Asset"
+  },
+  {
+   "fieldname": "dow",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Description of Work",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_js7gd",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-27 10:53:01.130199",
+ "modified_by": "Administrator",
+ "module": "Mro Information System",
+ "name": "MRO Maintenance Tracking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
