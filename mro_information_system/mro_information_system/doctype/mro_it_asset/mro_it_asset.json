@@ -1,0 +1,212 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{asset_code}{#####}",
+ "creation": "2023-06-26 13:53:05.474881",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "asset_code",
+  "assignee",
+  "column_break_tzajo",
+  "identifier",
+  "asset_note",
+  "info_section",
+  "criticality",
+  "update_method",
+  "user_auth",
+  "confidentiality",
+  "column_break_8ylkw",
+  "operating_system",
+  "onsite_backup",
+  "offsite_backup",
+  "offline_backup",
+  "hardware_info",
+  "wifi_enabled",
+  "bluetoot_enabled",
+  "location",
+  "column_break_sn0nm",
+  "storage_encrypt",
+  "shared_drive",
+  "tracking_section",
+  "last_updated",
+  "column_break_vkbwk",
+  "entered_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "asset_code",
+   "fieldtype": "Link",
+   "label": "Asset Code",
+   "options": "MRO Asset Code",
+   "reqd": 1
+  },
+  {
+   "description": "Hardware model or Software name",
+   "fieldname": "identifier",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Identifier",
+   "reqd": 1
+  },
+  {
+   "description": "Name of user or \"Shared\" if multiple",
+   "fieldname": "assignee",
+   "fieldtype": "Text",
+   "label": "Assignee"
+  },
+  {
+   "description": "If applicable",
+   "fieldname": "operating_system",
+   "fieldtype": "Data",
+   "label": "Operating System"
+  },
+  {
+   "description": "Level of runtime importance",
+   "fieldname": "criticality",
+   "fieldtype": "Link",
+   "label": "Criticality",
+   "options": "MRO Asset Criticality",
+   "reqd": 1
+  },
+  {
+   "description": "Level of information confidentiality handled by device",
+   "fieldname": "confidentiality",
+   "fieldtype": "Link",
+   "label": "Confidentiality",
+   "options": "MRO Asset Confidentiality"
+  },
+  {
+   "fieldname": "column_break_tzajo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "info_section",
+   "fieldtype": "Section Break",
+   "label": "Info"
+  },
+  {
+   "fieldname": "update_method",
+   "fieldtype": "Link",
+   "label": "Update Method",
+   "options": "MRO Update Method",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user_auth",
+   "fieldtype": "Link",
+   "label": "User Auth",
+   "options": "MRO User Auth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_8ylkw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "onsite_backup",
+   "fieldtype": "Data",
+   "label": "Onsite Backup"
+  },
+  {
+   "fieldname": "offsite_backup",
+   "fieldtype": "Data",
+   "label": "Offsite Backup"
+  },
+  {
+   "fieldname": "offline_backup",
+   "fieldtype": "Data",
+   "label": "Offline Backup"
+  },
+  {
+   "fieldname": "hardware_info",
+   "fieldtype": "Section Break",
+   "label": "Hardware Info"
+  },
+  {
+   "default": "0",
+   "fieldname": "wifi_enabled",
+   "fieldtype": "Check",
+   "label": "Wifi Enabled"
+  },
+  {
+   "default": "0",
+   "fieldname": "bluetoot_enabled",
+   "fieldtype": "Check",
+   "label": "Bluetooh Enabled"
+  },
+  {
+   "description": "Enter UNC or description of shared drives",
+   "fieldname": "shared_drive",
+   "fieldtype": "Text",
+   "label": "Shared Drives"
+  },
+  {
+   "fieldname": "column_break_sn0nm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "storage_encrypt",
+   "fieldtype": "Data",
+   "label": "Storage Encrypt"
+  },
+  {
+   "description": "Short description of asset",
+   "fieldname": "asset_note",
+   "fieldtype": "Text",
+   "label": "Asset Note"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Text",
+   "label": "Location"
+  },
+  {
+   "fieldname": "tracking_section",
+   "fieldtype": "Section Break",
+   "label": "Tracking"
+  },
+  {
+   "fieldname": "last_updated",
+   "fieldtype": "Date",
+   "label": "Last Updated",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vkbwk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "entered_on",
+   "fieldtype": "Date",
+   "label": "Entered on",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-27 10:01:51.674300",
+ "modified_by": "Administrator",
+ "module": "Mro Information System",
+ "name": "MRO IT Asset",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "asset_code,identifier,asset_note",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "asset_code"
+}
