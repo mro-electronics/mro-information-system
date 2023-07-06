@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:auth_method",
  "creation": "2023-06-26 14:17:20.208383",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -12,12 +13,13 @@
   {
    "fieldname": "auth_method",
    "fieldtype": "Data",
-   "label": "Auth method"
+   "label": "Auth method",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-26 14:17:20.208383",
+ "modified": "2023-07-05 12:39:37.201118",
  "modified_by": "Administrator",
  "module": "Mro Information System",
  "name": "MRO User Auth",
