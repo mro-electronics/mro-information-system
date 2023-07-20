@@ -19,7 +19,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-05 12:39:37.201118",
+ "modified": "2023-07-19 15:19:18.326037",
  "modified_by": "Administrator",
  "module": "Mro Information System",
  "name": "MRO User Auth",
@@ -38,6 +38,8 @@
    "write": 1
   }
  ],
+ "search_fields": "auth_method",
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "auth_method"
 }
