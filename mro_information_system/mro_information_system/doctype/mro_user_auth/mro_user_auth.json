@@ -1,7 +1,6 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:auth_method",
  "creation": "2023-06-26 14:17:20.208383",
  "doctype": "DocType",
  "editable_grid": 1,
