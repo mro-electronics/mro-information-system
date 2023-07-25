@@ -29,6 +29,9 @@
   "column_break_sn0nm",
   "storage_encrypt",
   "shared_drive",
+  "software_info",
+  "renewed_on",
+  "renewal_terms",
   "tracking_section",
   "last_updated",
   "column_break_vkbwk",
@@ -120,6 +123,7 @@
    "label": "Offline Backup"
   },
   {
+   "description": "Info needed for Hardware Assets",
    "fieldname": "hardware_info",
    "fieldtype": "Section Break",
    "label": "Hardware Info"
@@ -182,11 +186,28 @@
    "fieldtype": "Date",
    "label": "Entered on",
    "read_only": 1
+  },
+  {
+   "description": "Info needed for Software Assets",
+   "fieldname": "software_info",
+   "fieldtype": "Section Break",
+   "label": "Software Info"
+  },
+  {
+   "fieldname": "renewed_on",
+   "fieldtype": "Date",
+   "label": "Renewed On"
+  },
+  {
+   "fieldname": "renewal_terms",
+   "fieldtype": "Select",
+   "label": "Renewal Terms",
+   "options": "One-time\nMonthly\nQuarterly\nYearly\n2-years\n3-years\n4-years\n5-years"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-27 10:01:51.674300",
+ "modified": "2023-07-25 14:15:42.811335",
  "modified_by": "Administrator",
  "module": "Mro Information System",
  "name": "MRO IT Asset",
