@@ -1,1 +1,1 @@
-mro_information_system.patches.fix_primary_keys
+mro_information_system.patches.fix_primary_key
